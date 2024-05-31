@@ -1,16 +1,25 @@
-
 #include <stdio.h>
+int findsmallest(int array[],int n);
+int smallest=array[0];
+for(int i = 1; i< n; i++){
+if (array[i]< smallest){
+smallest = arr[i]
+  }
+}
+return smallest;
+}
 int main()
 {
   int n;
   int array[n];
-  int i;
-  int smallest number;
 printf("Enter the length of the array:\n");
 scanf("%d",&n);
 printf("Enter the elements of an array:\n");
 for( i=0 ; i<n ; i++){
 scanf("%d",&array[i]);
-printf("The smallest number in the array is %d",largest number);
-return 1;
+  int smallestNum = findsmallest(array,n);
+printf("The Smallest number in the array is %d",smallestNum);
+return 5;
 }
+
+
